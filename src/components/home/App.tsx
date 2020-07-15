@@ -1,15 +1,14 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import React, { ReactElement } from "react";
+import logo from "../../assets/images/logo.svg";
+import "../../assets/css/home/App.css";
 
-function App() {
+const App: React.FC = (): ReactElement => {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-log  o" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to ddreload.
-          jkvbjkdfhgjkhgfdkjhkjfdhkjfdghkj fhjgfhjfghjfhj
         </p>
         <a
           className="App-link"
@@ -21,6 +20,6 @@ function App() {
       </header>
     </div>
   );
-}
+};
 
 export default App;
